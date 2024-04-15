@@ -1,0 +1,2 @@
+UnityEngine.WebCamTexture
+System.Net.Sockets
