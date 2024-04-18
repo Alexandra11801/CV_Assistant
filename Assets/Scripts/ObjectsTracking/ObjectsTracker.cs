@@ -64,8 +64,7 @@ namespace CVAssistant.ObjectsTracking
                         var obj = new Rect2d(selectRect.X, selectRect.Y, selectRect.Width, selectRect.Height);
                         var tracker = Tracker.Create(TrackerTypes.KCF);
                         tracker.Init(mat, obj);
-                        var newSelection = Instantiate(objectSelectionPrefab, new Vector2((float)obj.X, image.rectTransform.sizeDelta.y - (float)obj.Y - (float)obj.Height / 2), Quaternion.identity, 
-                            image.transform).GetComponent<ObjectSelection>();
+                        var newSelection = Instantiate(objectSelectionPrefab, Vector2.zero, Quaternion.identity, image.transform).GetComponent<ObjectSelection>();
                         newSelection.RectTransform.sizeDelta = new Vector2(selectRect.Width, selectRect.Height);
                         newSelection.Tracker = tracker;
                         newSelection.ObjectsTracker = this;
@@ -98,8 +97,9 @@ namespace CVAssistant.ObjectsTracking
                     }
                     else
                     {
-                        selection.transform.position = new Vector2((float)obj.X, image.rectTransform.sizeDelta.y - (float)obj.Y - (float)obj.Height / 2);
-                        selection.RectTransform.sizeDelta = new Vector2((float)obj.Width, (float)obj.Height);
+                        selection.transform.localPosition = new Vector2((float)obj.X / delimeter - imageSize.Width / 2 + (float)obj.Width / (2 * delimeter), 
+                            imageSize.Height / 2 - (float)obj.Y / delimeter - (float)obj.Height / (2 * delimeter));
+                        selection.RectTransform.sizeDelta = new Vector2((float)obj.Width, (float)obj.Height) / delimeter;
                         selectRects.Add(new Rect((int)obj.X, (int)obj.Y, (int)obj.Width, (int)obj.Height));
                         i++;
                     }

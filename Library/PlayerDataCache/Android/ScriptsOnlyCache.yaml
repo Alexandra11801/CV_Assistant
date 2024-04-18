@@ -1,8 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - Assets.Scripts.ObjectsTracking.ObjectSelection
     - CVAssistant.CameraImageProcessing.CVCameraImageProcessor
+    - CVAssistant.ObjectsTracking.ObjectSelection
     - CVAssistant.ObjectsTracking.ObjectsTracker
     - CVAssistant.Scripts.Core.Core
     - CVAssistant.UI.EnterAddress
@@ -104,19 +104,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1602}
+      Script: {instanceID: 1600}
     - Class: 114
-      Script: {instanceID: 1738}
+      Script: {instanceID: 1736}
     - Class: 114
-      Script: {instanceID: 2148}
+      Script: {instanceID: 2146}
     - Class: 114
-      Script: {instanceID: 2242}
+      Script: {instanceID: 2240}
     - Class: 114
-      Script: {instanceID: 2382}
+      Script: {instanceID: 2380}
     - Class: 114
-      Script: {instanceID: 2692}
+      Script: {instanceID: 2690}
     - Class: 114
-      Script: {instanceID: 2920}
+      Script: {instanceID: 2918}
+    - Class: 114
+      Script: {instanceID: 3218}
     - Class: 114
       Script: {instanceID: 3240}
     - Class: 114
@@ -145,8 +147,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 7504}
     - Class: 114
       Script: {instanceID: 7786}
-    - Class: 114
-      Script: {instanceID: 24924}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -392,6 +392,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: OpenCvSharp.Demo
     className: MarkerDetector
+  - hash:
+      serializedVersion: 2
+      Hash: 37ed34899c7b9ff5ce87742fd3a187c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: CVAssistant.ObjectsTracking
+    className: ObjectSelection
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -1040,12 +1046,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 37ed34899c7b9ff5ce87742fd3a187c5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: Assets.Scripts.ObjectsTracking
-    className: ObjectSelection
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity

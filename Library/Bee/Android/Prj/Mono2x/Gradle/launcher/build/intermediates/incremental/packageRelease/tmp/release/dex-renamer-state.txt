@@ -1,4 +1,4 @@
-#Sun Apr 14 20:50:54 MSK 2024
+#Wed Apr 17 21:14:07 MSK 2024
 base.0=C\:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Library\\Bee\\Android\\Prj\\Mono2x\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

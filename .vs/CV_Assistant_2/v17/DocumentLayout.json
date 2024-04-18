@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|c:\\users\\alexa\\studying\\unityprojects\\cv_assistant_2\\assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\objectstracking\\objectselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|c:\\users\\alexa\\studying\\unityprojects\\cv_assistant_2\\assets\\scripts\\objectstracking\\objectselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectstracking\\objectselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\ui\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cameraimageprocessing\\imageresizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,13 +74,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ObjectSelection.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
               "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
               "RelativeToolTip": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAArAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-14T17:34:31.155Z",
               "EditorCaption": ""
@@ -105,14 +105,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
               "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
               "RelativeToolTip": "Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
-              "ViewState": "AQIAADoAAAAAAAAAAAAcwGoAAAANAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAcwFQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-17T17:52:08.702Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "CVCameraImageProcessor.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CVCameraImageProcessor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CVCameraImageProcessor.cs",
@@ -120,11 +120,12 @@
               "RelativeToolTip": "Assets\\Scripts\\CVCameraImageProcessor.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T16:43:48.549Z"
+              "WhenOpened": "2024-03-17T16:43:48.549Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TrackingScript.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\OpenCV\u002BUnity\\Demo\\Tracking\\TrackingScript.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Demo\\Tracking\\TrackingScript.cs",
@@ -148,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Host.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Host.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\Host.cs",
@@ -172,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Assistant.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Assistant.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\Assistant.cs",
@@ -196,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "StartMenu.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\StartMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartMenu.cs",
