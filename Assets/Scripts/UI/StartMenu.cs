@@ -39,7 +39,7 @@ namespace CVAssistant.UI
         public void StartTranslation()
         {
             var host = Host.GetInstance(translationImage);
-            host.Listen();
+            host.StartListening();
             address.text = host.Address.ToString();
             translationImage.gameObject.SetActive(true);
             cameraImageProcessor.enabled = true;

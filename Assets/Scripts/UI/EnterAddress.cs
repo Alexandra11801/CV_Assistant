@@ -16,7 +16,8 @@ namespace CVAssistant.UI
 
         public async void JoinTranslation()
         {
-            await Assistant.GetInstance(translationImage).ConnectToHost(inputField.text);
+            var assistant = Assistant.GetInstance(translationImage);
+            await assistant.ConnectToHost(inputField.text);
             translationImage.gameObject.SetActive(true);
             tracker.enabled = true;
             core.IsHost = false;
