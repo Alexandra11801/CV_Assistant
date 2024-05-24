@@ -50,9 +50,14 @@ namespace CVAssistant.ObjectsTracking
             isDragging = false;
         }
 
-        private void Start()
+        public void StartTracking()
         {
             StartCoroutine(nameof(UpdateSelections));
+        }
+
+        public void StopTracking()
+        {
+            StopCoroutine(nameof(UpdateSelections));
         }
 
         private IEnumerator UpdateSelections()
@@ -60,7 +65,7 @@ namespace CVAssistant.ObjectsTracking
             while(true)
             {
                 UpdateRects();
-                var task = Assistant.GetInstance(null).SendSelection();
+                var task = Assistant.GetInstance().StartSendingSelection();
                 yield return new WaitUntil(() => task.IsCompleted);
                 yield return new WaitForSeconds(0.15f);
             }
@@ -69,7 +74,7 @@ namespace CVAssistant.ObjectsTracking
         public void UpdateRects()
         {
             var selectRects = new List<Rect>();
-            var assistant = Assistant.GetInstance(null);
+            var assistant = Assistant.GetInstance();
             var texture = assistant.ReceivedTexture;
             if (texture != null)
             {
@@ -88,7 +93,7 @@ namespace CVAssistant.ObjectsTracking
                         if ((end - start).magnitude >= minimalSelectDiagonal && currentSelections.Count < trackersLimit)
                         {
                             var obj = new Rect2d(selectRect.X, selectRect.Y, selectRect.Width, selectRect.Height);
-                            var tracker = Tracker.Create(TrackerTypes.Boosting);
+                            var tracker = Tracker.Create(TrackerTypes.KCF);
                             tracker.Init(mat, obj);
                             var newSelection = Instantiate(objectSelectionPrefab, Vector2.zero, Quaternion.identity, image.transform).GetComponent<ObjectSelection>();
                             newSelection.RectTransform.sizeDelta = new Vector2(selectRect.Width, selectRect.Height);

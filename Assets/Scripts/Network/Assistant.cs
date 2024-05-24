@@ -2,7 +2,6 @@
 using CVAssistant.ObjectsTracking;
 using OpenCvSharp;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -10,51 +9,68 @@ using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
-using Rect = OpenCvSharp.Rect;
 
 namespace CVAssistant.Network
 {
-    public class Assistant
+    public class Assistant : SocketHandler
     {
-        private static Assistant instance;
-        private string address;
+        public struct ImageInfo
+        {
+            byte[] bytes;
+            int width;
+            int height;
 
-        private int imagePort = 13000;
-        private TcpClient imageClient;
-        private NetworkStream imageStream;
+            public byte[] Bytes => bytes;
+            public int Width => width;
+            public int Height => height;
 
-        private int selectionPort = 12000;
-        private TcpClient selectionClient;
-        private NetworkStream selectionStream;
+            public ImageInfo(byte[] bytes, int width, int height)
+            {
+                this.bytes = bytes;
+                this.width = width;
+                this.height = height;
+            }
+        }
 
         private RawImage image;
         private Texture2D receivedTexture;
         private ObjectsTracker tracker;
+        private GameObject startMenu;
 
-        public string Address => address;
         public Texture2D ReceivedTexture => receivedTexture;
 
-        private Assistant(RawImage image)
+        public GameObject StartMenu
         {
-            this.image = image;
-            tracker = image.GetComponent<ObjectsTracker>();
+            get { return startMenu; }
+            set { startMenu = value; }
         }
 
-        public static Assistant GetInstance(RawImage image)
+        public static Assistant GetInstance()
         {
             if (instance == null)
             {
-                instance = new Assistant(image);
+                instance = new Assistant();
             }
-            return instance;
+            return (Assistant)instance;
+        }
+
+        public void SetImage(RawImage image)
+        {
+            this.image = image;
+            tracker = image.GetComponent<ObjectsTracker>();
         }
 
         public async Task ConnectToHost(string address)
         {
             var imageConnectionTask = RequestImage(address);
             var selectionConnectionTask = RequestSelectionSending(address);
-            await Task.WhenAll(imageConnectionTask, selectionConnectionTask);
+            var audioConnectionTask = RequestAudio(address);
+            await Task.WhenAll(imageConnectionTask, selectionConnectionTask, audioConnectionTask);
+            cancellationTokenSource = new CancellationTokenSource();
             ReadImageLoop();
+            tracker.StartTracking();
+            //audioSender.StartSendingAudio();
+            //ReceiveAudioLoop();
         }
 
         public async Task RequestImage(string address)
@@ -71,10 +87,21 @@ namespace CVAssistant.Network
             selectionStream = selectionClient.GetStream();
         }
 
-        public void Disconnect()
+        public async Task RequestAudio(string address)
         {
-            imageClient.Close();
-            selectionClient.Close();
+            audioClient = new TcpClient();
+            await audioClient.ConnectAsync(IPAddress.Parse(address), audioPort);
+            audioStream = audioClient.GetStream();
+        }
+
+        public override void Disconnect(Exception e)
+        {
+            base.Disconnect(e);
+            image.texture = null;
+            image.gameObject.SetActive(false);
+            tracker.StopTracking();
+            tracker.enabled = false;
+            startMenu.SetActive(true);
         }
 
         private async void ReadImageLoop()
@@ -83,46 +110,59 @@ namespace CVAssistant.Network
             {
                 try
                 {
-                   await LoadScreenImage();
+                    var task = Task.Run(() => LoadScreenImage(cancellationTokenSource.Token));
+                    var imageInfo = await task;
+                    RenderImage(imageInfo);
                 }
                 catch(Exception ex)
                 {
-                    Disconnect();
+                    Disconnect(ex);
                 }
             }
         }
 
-        private async void SendSelectionLoop()
+        public async Task StartSendingSelection()
         {
-            while (selectionClient.Connected)
+            try
             {
-                try
-                {
-                    await SendSelection();
-                }
-                catch (Exception ex)
-                {
-                    Disconnect();
-                }
+                var task = Task.Run(() => SendSelection());
+                await task;
+            }
+            catch (Exception ex)
+            {
+                Disconnect(ex);
             }
         }
 
-        private async Task LoadScreenImage()
+        private async Task<ImageInfo> LoadScreenImage(CancellationToken cancellationToken)
         {
-            var width = await ReadInt(imageStream);
-            var height = await ReadInt(imageStream);
-            var bytesCodedArrayLength = await ReadInt(imageStream);
+            var width = await ReadInt(imageStream, cancellationToken);
+            var height = await ReadInt(imageStream, cancellationToken);
+            var bytesCodedArrayLength = await ReadInt(imageStream, cancellationToken);
             var bytesCodedArray = new byte[bytesCodedArrayLength];
             var bytesCount = 0;
             while (bytesCount < bytesCodedArrayLength)
             {
-                bytesCount += await imageStream.ReadAsync(bytesCodedArray, bytesCount, bytesCodedArrayLength - bytesCount);
+                bytesCount += await imageStream.ReadAsync(bytesCodedArray, bytesCount, bytesCodedArrayLength - bytesCount, cancellationToken);
             }
-            var bytesCoded = Encoding.UTF8.GetString(bytesCodedArray);
-            var bytes = Convert.FromBase64String(bytesCoded);
-            var texture = new Texture2D(width, height);
-            texture.LoadImage(bytes);
-            ImageResizer.AdjustImageToTexture(image, new Vector2(width, height), ImageResizer.AdjustMode.ToMinimum);
+            if (cancellationToken.IsCancellationRequested)
+            {
+                cancellationToken.ThrowIfCancellationRequested();
+                return default;
+            }
+            else
+            {
+                var bytesCoded = Encoding.UTF8.GetString(bytesCodedArray);
+                var bytes = Convert.FromBase64String(bytesCoded);
+                return new ImageInfo(bytes, width, height);
+            }
+        }
+        
+        private void RenderImage(ImageInfo imageInfo)
+        {
+            var texture = new Texture2D(imageInfo.Width, imageInfo.Height);
+            texture.LoadImage(imageInfo.Bytes);
+            ImageResizer.AdjustImageToTexture(image, new Vector2(imageInfo.Width, imageInfo.Height), ImageResizer.AdjustMode.ToMinimum);
             receivedTexture = texture;
             var rects = tracker.CurrentRects;
             var mat = OpenCvSharp.Unity.TextureToMat(texture);
@@ -144,22 +184,6 @@ namespace CVAssistant.Network
                 await WriteInt(selectionStream, selectRect.Size.Width);
                 await WriteInt(selectionStream, selectRect.Size.Height);
             }
-        }
-
-        private async Task<int> ReadInt(NetworkStream stream)
-        {
-            var bytes = new byte[4];
-            var bytesCount = 0;
-            while (bytesCount < 4)
-            {
-                bytesCount += await stream.ReadAsync(bytes, bytesCount, 4 - bytesCount);
-            }
-            return BitConverter.ToInt32(bytes);
-        }
-
-        private async Task WriteInt(NetworkStream stream, int value)
-        {
-            await stream.WriteAsync(BitConverter.GetBytes((uint)value), 0, 4);
         }
     }
 }

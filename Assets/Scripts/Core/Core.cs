@@ -22,7 +22,14 @@ namespace CVAssistant.Scripts.Core
 
         private void OnApplicationQuit()
         {
-            Assistant.GetInstance(null).Disconnect();
+            if (!isHost)
+            {
+                Assistant.GetInstance().Disconnect(null);
+            }
+            else
+            {
+                Host.GetInstance().Disconnect(null);
+            }
         }
     }
 }

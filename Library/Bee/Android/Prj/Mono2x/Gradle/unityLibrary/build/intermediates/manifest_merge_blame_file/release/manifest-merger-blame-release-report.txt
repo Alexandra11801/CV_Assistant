@@ -46,105 +46,122 @@
 27-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:17-61
 28        android:required="false" />
 28-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:62-86
-29    <uses-feature
-29-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-88
-30        android:name="android.hardware.touchscreen"
-30-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:17-60
-31        android:required="false" />
-31-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:61-85
-32    <uses-feature
-32-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-99
-33        android:name="android.hardware.touchscreen.multitouch"
-33-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:17-71
-34        android:required="false" />
-34-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:72-96
-35    <uses-feature
-35-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-108
-36        android:name="android.hardware.touchscreen.multitouch.distinct"
-36-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:17-80
-37        android:required="false" />
-37-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:81-105
-38
-39    <application android:extractNativeLibs="true" >
-39-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-18:17
-39-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
-40        <activity
-40-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
-41            android:name="com.unity3d.player.UnityPlayerActivity"
-41-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
-42            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-42-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
-43            android:hardwareAccelerated="false"
-43-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
-44            android:launchMode="singleTask"
-44-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
-45            android:resizeableActivity="false"
-45-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
-46            android:screenOrientation="landscape"
-46-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
-47            android:theme="@style/UnityThemeSelector" >
-47-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
-48            <intent-filter>
-48-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
-49                <action android:name="android.intent.action.MAIN" />
-49-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-49-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
-50
-51                <category android:name="android.intent.category.LAUNCHER" />
-51-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-51-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
-52            </intent-filter>
-53
-54            <meta-data
-54-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
-55                android:name="unityplayer.UnityActivity"
-55-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
-56                android:value="true" />
-56-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
-57            <meta-data
-57-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
-58                android:name="android.notch_support"
-58-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
-59                android:value="true" />
-59-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
-60        </activity>
+29
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+30-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:3-69
+30-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:20-66
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:3-78
+31-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:20-75
+32    <uses-permission android:name="android.permission.BLUETOOTH" />
+32-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:3-66
+32-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:20-63
+33
+34    <uses-feature
+34-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:3-87
+35        android:name="android.hardware.microphone"
+35-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:17-59
+36        android:required="false" />
+36-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:60-84
+37    <uses-feature
+37-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:3-88
+38        android:name="android.hardware.touchscreen"
+38-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:17-60
+39        android:required="false" />
+39-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:30:61-85
+40    <uses-feature
+40-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:3-99
+41        android:name="android.hardware.touchscreen.multitouch"
+41-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:17-71
+42        android:required="false" />
+42-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:31:72-96
+43    <uses-feature
+43-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:3-108
+44        android:name="android.hardware.touchscreen.multitouch.distinct"
+44-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:17-80
+45        android:required="false" />
+45-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:32:81-105
+46
+47    <application android:extractNativeLibs="true" >
+47-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-18:17
+47-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+48        <activity
+48-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+49            android:name="com.unity3d.player.UnityPlayerActivity"
+49-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+50            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+50-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
+51            android:hardwareAccelerated="false"
+51-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
+52            android:launchMode="singleTask"
+52-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
+53            android:resizeableActivity="false"
+53-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
+54            android:screenOrientation="landscape"
+54-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
+55            android:theme="@style/UnityThemeSelector" >
+55-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+56            <intent-filter>
+56-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
+57                <action android:name="android.intent.action.MAIN" />
+57-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+57-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+59-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+60            </intent-filter>
 61
-62        <meta-data
-62-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-63            android:name="unity.splash-mode"
-63-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-64            android:value="0" />
-64-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
-65        <meta-data
-65-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-66            android:name="unity.splash-enable"
-66-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-67            android:value="True" />
-67-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
-68        <meta-data
-68-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-69            android:name="unity.launch-fullscreen"
-69-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
-70            android:value="True" />
-70-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
-71        <meta-data
-71-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-72            android:name="unity.allow-resizable-window"
-72-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-73            android:value="False" />
-73-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
-74        <meta-data
-74-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
-75            android:name="notch.config"
-75-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
-76            android:value="portrait|landscape" />
-76-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
-77        <meta-data
-77-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
-78            android:name="unity.auto-report-fully-drawn"
-78-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-60
-79            android:value="true" />
-79-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:61-81
-80    </application>
-81
-82</manifest>
+62            <meta-data
+62-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
+63                android:name="unityplayer.UnityActivity"
+63-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
+64                android:value="true" />
+64-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+65            <meta-data
+65-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+66                android:name="android.notch_support"
+66-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+67                android:value="true" />
+67-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+68        </activity>
+69
+70        <meta-data
+70-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+71            android:name="unity.splash-mode"
+71-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+72            android:value="0" />
+72-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+73        <meta-data
+73-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+74            android:name="unity.splash-enable"
+74-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
+75            android:value="True" />
+75-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+76        <meta-data
+76-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+77            android:name="unity.launch-fullscreen"
+77-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+78            android:value="True" />
+78-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+79        <meta-data
+79-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+80            android:name="unity.allow-resizable-window"
+80-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+81            android:value="False" />
+81-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+82        <meta-data
+82-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+83            android:name="notch.config"
+83-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+84            android:value="portrait|landscape" />
+84-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+85        <meta-data
+85-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-84
+86            android:name="unity.auto-report-fully-drawn"
+86-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-60
+87            android:value="true" />
+87-->C:\Users\alexa\Studying\UnityProjects\CV_Assistant_2\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:61-81
+88    </application>
+89
+90</manifest>

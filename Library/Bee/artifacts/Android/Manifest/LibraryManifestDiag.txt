@@ -8,6 +8,9 @@ android.permission.INTERNET was added because:
 android.permission.CAMERA, android.hardware.camera (Auto Focus, Front) were added because:
 	UnityEngine.WebCamTexture was present in:
 		Assembly-CSharp-FeaturesChecked.txt
+android.permission.RECORD_AUDIO, android.permission.MODIFY_AUDIO_SETTINGS, android.permission.BLUETOOTH, android.hardware.microphone were added because:
+	UnityEngine.Microphone was present in:
+		Assembly-CSharp-FeaturesChecked.txt
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::GetTouch was present in:
 		UnityEngine.UI-FeaturesChecked.txt

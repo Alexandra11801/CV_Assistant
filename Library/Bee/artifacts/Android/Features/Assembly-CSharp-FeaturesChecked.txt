@@ -1,2 +1,3 @@
 UnityEngine.WebCamTexture
+UnityEngine.Microphone
 System.Net.Sockets

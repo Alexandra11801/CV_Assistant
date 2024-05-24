@@ -1,4 +1,5 @@
-﻿using CVAssistant.CameraImageProcessing;
+﻿using CVAssistant.Audio;
+using CVAssistant.CameraImageProcessing;
 using CVAssistant.Network;
 using CVAssistant.Scripts.Core;
 using TMPro;
@@ -38,10 +39,13 @@ namespace CVAssistant.UI
 
         public void StartTranslation()
         {
-            var host = Host.GetInstance(translationImage);
+            translationImage.gameObject.SetActive(true);
+            var host = Host.GetInstance();
+            host.SetImage(translationImage);
+            host.SetAudioReceiver((AudioReceiver)FindObjectOfType(typeof(AudioReceiver)));
+            host.SetAudioSender((AudioSender)FindObjectOfType(typeof(AudioSender)));
             host.StartListening();
             address.text = host.Address.ToString();
-            translationImage.gameObject.SetActive(true);
             cameraImageProcessor.enabled = true;
             core.IsHost = true;
             hostUI.SetActive(true);
