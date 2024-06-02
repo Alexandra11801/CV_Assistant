@@ -1,9 +1,12 @@
 ﻿using CVAssistant.Audio;
 using NSpeex;
 using System;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -12,21 +15,6 @@ namespace CVAssistant.Network
 {
     public class SocketHandler
     {
-        public struct AudioInfo
-        {
-            byte[] audioData;
-            int dataLength;
-
-            public byte[] AudioData => audioData;
-            public int DataLength => dataLength;
-
-            public AudioInfo(byte[] audioData, int dataLength)
-            {
-                this.audioData = audioData;
-                this.dataLength = dataLength;
-            }
-        }
-
         protected static SocketHandler instance;
         protected IPAddress address;
         protected CancellationTokenSource cancellationTokenSource;
@@ -46,6 +34,8 @@ namespace CVAssistant.Network
         protected AudioReceiver audioReceiver;
 
         public IPAddress Address => address;
+
+        //Функция передачи аудио отключена, так как выбранные инструменты не удовлетворяют требованиям производительности. Планируется дальнейшая отладка и/или переработка функции.
 
         public void SetAudioSender(AudioSender value)
         {
@@ -68,28 +58,20 @@ namespace CVAssistant.Network
             cancellationTokenSource.Dispose();
             imageClient.Close();
             selectionClient.Close();
-            audioClient.Close();
+            //audioClient.Close();
             imageStream.Flush();
             selectionStream.Flush();
-            audioStream.Flush();
-            audioSender.StopSendingAudio();
-            audioReceiver.StopPlay();
+            //audioStream.Flush();
+            //audioSender.StopSendingAudio();
+            //audioReceiver.StopPlay();
         }
 
-        public async Task TrySendAudio(AudioClip clip, int startPosition, int endPosition)
+        public async Task TrySendAudio(float[] floats)
         {
             try
             {
-                if(endPosition > startPosition)
-                {
-                    var floats = new float[endPosition - startPosition];
-                    clip.GetData(floats, startPosition);
-                    var info = EncodeAudio(floats);
-                    var floats2 = DecodeAudio(info.AudioData, info.DataLength, floats.Length);
-                    audioReceiver.AddFloats(floats);
-                    var task = Task.Run(() => SendAudio(floats, audioStream));
-                    await task;
-                }
+                var task = Task.Run(() => SendAudio(floats, audioStream, cancellationTokenSource.Token));
+                await task;
             }
             catch (Exception ex)
             {
@@ -125,66 +107,56 @@ namespace CVAssistant.Network
             return BitConverter.ToInt32(bytes);
         }
 
-        protected async Task WriteInt(NetworkStream stream, int value)
+        protected async Task WriteInt(NetworkStream stream, int value, CancellationToken cancellationToken)
         {
-            await stream.WriteAsync(BitConverter.GetBytes((uint)value), 0, 4);
+            await stream.WriteAsync(BitConverter.GetBytes((uint)value), 0, 4, cancellationToken);
         }
 
-        public async Task SendAudio(float[] floats, NetworkStream stream)
+        public async Task SendAudio(float[] floats, NetworkStream stream, CancellationToken cancellationToken)
         {
-            await WriteInt(stream, floats.Length); 
-            var encodedAudioInfo = EncodeAudio(floats);
-            await WriteInt(stream, encodedAudioInfo.DataLength);
-            await WriteInt(stream, encodedAudioInfo.AudioData.Length);
-            await stream.WriteAsync(encodedAudioInfo.AudioData, 0, encodedAudioInfo.AudioData.Length);
+            await WriteInt(stream, floats.Length, cancellationToken);
+            var encodedAudio = EncodeAudio(floats);
+            await WriteInt(stream, encodedAudio.Length, cancellationToken);
+            await stream.WriteAsync(encodedAudio, 0, encodedAudio.Length, cancellationToken);
         }
 
-        private AudioInfo EncodeAudio(float[] floats)
+        private byte[] EncodeAudio(float[] floats)
         {
             var shorts = new short[floats.Length];
             for (var i = 0; i < shorts.Length; i++)
             {
-                shorts[i] = (short)Mathf.FloorToInt(short.MaxValue * (floats[i] + 1) * 2);
+                shorts[i] = (short)Mathf.FloorToInt(short.MaxValue * ((floats[i] + 1) / 2));
             }
-            var encoder = new SpeexEncoder(BandMode.Wide);
-            byte[] bytes = new byte[shorts.Length];
-            var dataLength = encoder.Encode(shorts, 0, shorts.Length, bytes, 0, bytes.Length);
-            var info = new AudioInfo(bytes, dataLength);
-            return info;
+            var encoder = new SpeexEncoder(BandMode.Narrow);
+            byte[] encoded = new byte[shorts.Length];
+            var dataLength = encoder.Encode(shorts, 0, shorts.Length, encoded, 0, encoded.Length);
+            Array.Resize(ref encoded, dataLength);
+            return encoded;
         }
 
         public async Task<float[]> ReceiveAudio(NetworkStream stream, CancellationToken cancellationToken)
         {
             var decodedLength = await ReadInt(stream, cancellationToken);
-            var realDataLength = await ReadInt(stream, cancellationToken);
-            var bytesLength = await ReadInt(stream, cancellationToken);
-            var bytes = new byte[bytesLength];
+            var encodedLength = await ReadInt(stream, cancellationToken);
+            var bytes = new byte[encodedLength];
             var bytesCount = 0;
-            while (bytesCount < bytesLength)
+            while (bytesCount < encodedLength)
             {
-                bytesCount += await audioStream.ReadAsync(bytes, bytesCount, bytesLength - bytesCount, cancellationToken);
+                bytesCount += await audioStream.ReadAsync(bytes, bytesCount, encodedLength - bytesCount, cancellationToken);
             }
-            if (cancellationToken.IsCancellationRequested)
-            {
-                cancellationToken.ThrowIfCancellationRequested();
-                return null;
-            }
-            else
-            {
-                var floats = DecodeAudio(bytes, realDataLength, decodedLength);
-                return floats;
-            }
+            var floats = DecodeAudio(bytes, decodedLength);
+            return floats;
         }
 
-        private float[] DecodeAudio(byte[] bytes, int dataLength, int decodedLength)
+        private float[] DecodeAudio(byte[] encoded, int decodedLength)
         {
             var shorts = new short[decodedLength];
-            var decoder = new SpeexDecoder(BandMode.Wide);
-            decoder.Decode(bytes, 0, dataLength, shorts, 0, false);
-            var floats = new float[shorts.Length];
+            var decoder = new SpeexDecoder(BandMode.Narrow);
+            decoder.Decode(encoded, 0, encoded.Length, shorts, 0, false);
+            var floats = new float[decodedLength];
             for(var i = 0; i < floats.Length; i++)
             {
-                floats[i] = shorts[i] / (2 * (float)short.MaxValue) - 1;
+                floats[i] = (shorts[i] / (float)short.MaxValue) * 2 - 1;
             }
             return floats;
         }

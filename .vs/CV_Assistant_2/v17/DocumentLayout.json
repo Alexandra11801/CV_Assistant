@@ -3,32 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\network\\assistant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\network\\assistant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|c:\\users\\alexa\\studying\\unityprojects\\cv_assistant_2\\assets\\scripts\\network\\sockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\network\\sockethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\network\\host.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\network\\host.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|c:\\users\\alexa\\studying\\unityprojects\\cv_assistant_2\\assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectstracking\\objectstracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\network\\assistant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\network\\assistant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\ui\\enteraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\enteraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\audio\\audioreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audioreceiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cameraimageprocessing\\imageresizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraimageprocessing\\imageresizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\audio\\audiosender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audio\\audiosender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cameraimageprocessing\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraimageprocessing\\cvcameraimageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\nspeex\\nspeex-master\\speexdecoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\nspeex\\nspeex-master\\speexdecoder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\core\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\cameraimageprocessing\\imageresizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameraimageprocessing\\imageresizer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\nspeex\\nspeex-master\\test\\speextest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\nspeex\\nspeex-master\\test\\speextest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\ui\\enteraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\enteraddress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\ui\\startmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,16 +59,16 @@
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\opencv\u002Bunity\\demo\\scripts\\webcamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\pinvoke\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\pinvoke\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\scripts\\objectstracking\\objectselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\objectstracking\\objectselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\modules\\tracking\\tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\modules\\tracking\\tracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\pinvoke\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|solutionrelative:assets\\opencv\u002Bunity\\assets\\scripts\\opencvsharp\\pinvoke\\nativemethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AFC14602-1563-ED67-2F9F-E7E44E2F588B}|Assembly-CSharp.csproj|C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\assets\\opencv\u002Bunity\\demo\\scripts\\camerascaler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,23 +86,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ObjectSelection.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAANAAAA",
+              "DocumentIndex": 6,
+              "Title": "AudioSender.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Audio\\AudioSender.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioSender.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Audio\\AudioSender.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioSender.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwDEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-14T17:34:31.155Z"
+              "WhenOpened": "2024-05-19T19:03:03.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
+              "Title": "Core.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Core\\Core.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Core.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Core\\Core.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\Core.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T17:50:32.203Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AudioReceiver.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Audio\\AudioReceiver.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Audio\\AudioReceiver.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Audio\\AudioReceiver.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Audio\\AudioReceiver.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwDoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T11:52:11.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CVCameraImageProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\CVCameraImageProcessor.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraImageProcessing\\CVCameraImageProcessor.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\CVCameraImageProcessor.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraImageProcessing\\CVCameraImageProcessor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:57:24.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SocketHandler.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\SocketHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\SocketHandler.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\SocketHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Network\\SocketHandler.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCUAAAC0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:39:16.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "NativeMethods.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\OpenCV\u002BUnity\\Assets\\Scripts\\OpenCvSharp\\PInvoke\\NativeMethods.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Assets\\Scripts\\OpenCvSharp\\PInvoke\\NativeMethods.cs",
@@ -100,7 +169,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
               "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
               "RelativeToolTip": "Assets\\Scripts\\ObjectsTracking\\ObjectsTracker.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAiwDgAAAAAAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwDoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-17T17:52:08.702Z",
               "EditorCaption": ""
@@ -108,28 +177,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CVCameraImageProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CVCameraImageProcessor.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CVCameraImageProcessor.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CVCameraImageProcessor.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CVCameraImageProcessor.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAnAAAA",
+              "Title": "Assistant.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Assistant.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\Assistant.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Assistant.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Network\\Assistant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALMAAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T16:43:48.549Z",
+              "WhenOpened": "2024-03-12T17:24:51.084Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "EnterAddress.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\EnterAddress.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\EnterAddress.cs",
               "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\EnterAddress.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\EnterAddress.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA7AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T17:46:30.83Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-12T17:46:30.83Z"
             },
             {
               "$type": "Document",
@@ -139,7 +207,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\Host.cs",
               "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Host.cs",
               "RelativeToolTip": "Assets\\Scripts\\Network\\Host.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAYwHEAAAAJAAAA",
+              "ViewState": "AQIAAGkAAAAAAAAAAAAAAGYAAABgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T17:24:54.032Z",
               "EditorCaption": ""
@@ -147,31 +215,54 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Core.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Core\\Core.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\Core.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Core\\Core.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\Core.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAnAAAA",
+              "Title": "ImageResizer.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T17:39:39.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Assistant.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Assistant.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Network\\Assistant.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\Network\\Assistant.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Network\\Assistant.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAkwHkAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T17:24:51.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-10T14:13:56.68Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "SpeexDecoder.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\NSpeex\\NSpeex-master\\SpeexDecoder.cs",
+              "RelativeDocumentMoniker": "Assets\\NSpeex\\NSpeex-master\\SpeexDecoder.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\NSpeex\\NSpeex-master\\SpeexDecoder.cs",
+              "RelativeToolTip": "Assets\\NSpeex\\NSpeex-master\\SpeexDecoder.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAkwIwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:59:34.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StartMenu.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\StartMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartMenu.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\StartMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\StartMenu.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T14:01:16.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SpeexTest.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\NSpeex\\NSpeex-master\\Test\\SpeexTest.cs",
+              "RelativeDocumentMoniker": "Assets\\NSpeex\\NSpeex-master\\Test\\SpeexTest.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\NSpeex\\NSpeex-master\\Test\\SpeexTest.cs",
+              "RelativeToolTip": "Assets\\NSpeex\\NSpeex-master\\Test\\SpeexTest.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAIkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:57:53.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WebCamera.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\WebCamera.cs",
@@ -183,31 +274,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StartMenu.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\StartMenu.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\StartMenu.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\UI\\StartMenu.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\StartMenu.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwCkAAAAMAAAA",
+              "DocumentIndex": 15,
+              "Title": "ObjectSelection.cs",
+              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
+              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ObjectsTracking\\ObjectSelection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T14:01:16.257Z"
+              "WhenOpened": "2024-04-14T17:34:31.155Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ImageResizer.cs",
-              "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
-              "ToolTip": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CameraImageProcessing\\ImageResizer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T14:13:56.68Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "Tracker.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\OpenCV\u002BUnity\\Assets\\Scripts\\OpenCvSharp\\modules\\tracking\\Tracker.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Assets\\Scripts\\OpenCvSharp\\modules\\tracking\\Tracker.cs",
@@ -219,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "MaterialReferenceManager.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Library\\PackageCache\\com.unity.textmeshpro@3.0.6\\Scripts\\Runtime\\MaterialReferenceManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.textmeshpro@3.0.6\\Scripts\\Runtime\\MaterialReferenceManager.cs",
@@ -231,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "CameraScaler.cs",
               "DocumentMoniker": "C:\\Users\\alexa\\Studying\\UnityProjects\\CV_Assistant_2\\Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\CameraScaler.cs",
               "RelativeDocumentMoniker": "Assets\\OpenCV\u002BUnity\\Demo\\Scripts\\CameraScaler.cs",

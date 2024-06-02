@@ -282,7 +282,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 028d0c0e8a4b23ac962195a1c50d1118
+      Hash: cbeba0be93684d3bcd4b72542d830f58
     assemblyName: Assembly-CSharp.dll
     namespaceName: CVAssistant.Audio
     className: AudioReceiver

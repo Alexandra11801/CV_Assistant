@@ -45,7 +45,7 @@ namespace CVAssistant.Network
             address = hostAddresses.FirstOrDefault(a => a.AddressFamily == AddressFamily.InterNetwork);
             imageListener = new TcpListener(address, imagePort);
             selectionListener = new TcpListener(address, selectionPort);
-            audioListener = new TcpListener(address, audioPort);
+            //audioListener = new TcpListener(address, audioPort);
             selectRects = new List<Rect>();
         }
 
@@ -53,13 +53,14 @@ namespace CVAssistant.Network
         {
             imageListener.Start();
             selectionListener.Start();
-            audioListener.Start();
+            //audioListener.Start();
             while (true)
             {
                 var imageListenerTask = ListenForImageRequest();
                 var selectionListenerTask = ListenForSelectionRequest();
-                var audioListenerTask = ListenForAudioRequest();
-                await Task.WhenAll(imageListenerTask, selectionListenerTask, audioListenerTask);
+                //var audioListenerTask = ListenForAudioRequest();
+                //await Task.WhenAll(imageListenerTask, selectionListenerTask, audioListenerTask);
+                await Task.WhenAll(imageListenerTask, selectionListenerTask);
                 cancellationTokenSource = new CancellationTokenSource();
                 WriteImageLoop();
                 ReceiveSelectionLoop();
@@ -99,7 +100,7 @@ namespace CVAssistant.Network
                 try
                 {
                     var texture = imageProcessor.ClearTexture;
-                    var task = Task.Run(() => SendTexture(texture));
+                    var task = Task.Run(() => SendTexture(texture, cancellationTokenSource.Token));
                     await task;
                 }
                 catch (Exception ex)
@@ -125,15 +126,16 @@ namespace CVAssistant.Network
             }
         }
 
-        private async Task SendTexture(Texture2D texture)
+        private async Task SendTexture(Texture2D texture, CancellationToken cancellationToken)
         {
-            var bytes = ImageConversion.EncodeToJPG(texture, 25);
-            await WriteInt(imageStream, texture.width);
-            await WriteInt(imageStream, texture.height);
+            var bytes = ImageConversion.EncodeToJPG(texture, 17);
+            
+            await WriteInt(imageStream, texture.width, cancellationToken);
+            await WriteInt(imageStream, texture.height, cancellationToken);
             var bytesCoded = Convert.ToBase64String(bytes);
             var bytesCodedArray = Encoding.UTF8.GetBytes(bytesCoded);
-            await WriteInt(imageStream, bytesCodedArray.Length);
-            await imageStream.WriteAsync(bytesCodedArray, 0, bytesCodedArray.Length);
+            await WriteInt(imageStream, bytesCodedArray.Length, cancellationToken);
+            await imageStream.WriteAsync(bytesCodedArray, 0, bytesCodedArray.Length, cancellationToken);
         }
 
         private async Task ReceiveSelection(CancellationToken cancellationToken)
@@ -142,19 +144,12 @@ namespace CVAssistant.Network
             var newRects = new List<Rect>();
             for(int i = 0; i < rectCount; i++)
             {
-                if (cancellationToken.IsCancellationRequested)
-                {
-                    cancellationToken.ThrowIfCancellationRequested();
-                }
-                else
-                {
-                    var x = await ReadInt(selectionStream, cancellationToken);
-                    var y = await ReadInt(selectionStream, cancellationToken);
-                    var width = await ReadInt(selectionStream, cancellationToken);
-                    var height = await ReadInt(selectionStream, cancellationToken);
-                    var selectRect = new Rect(x, y, width, height);
-                    newRects.Add(selectRect);
-                }
+                var x = await ReadInt(selectionStream, cancellationToken);
+                var y = await ReadInt(selectionStream, cancellationToken);
+                var width = await ReadInt(selectionStream, cancellationToken);
+                var height = await ReadInt(selectionStream, cancellationToken);
+                var selectRect = new Rect(x, y, width, height);
+                newRects.Add(selectRect);
             }
             selectRects = newRects;
         }

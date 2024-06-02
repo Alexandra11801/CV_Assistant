@@ -64,12 +64,13 @@ namespace CVAssistant.Network
         {
             var imageConnectionTask = RequestImage(address);
             var selectionConnectionTask = RequestSelectionSending(address);
-            var audioConnectionTask = RequestAudio(address);
-            await Task.WhenAll(imageConnectionTask, selectionConnectionTask, audioConnectionTask);
+            //var audioConnectionTask = RequestAudio(address);
+            await Task.WhenAll(imageConnectionTask, selectionConnectionTask);
             cancellationTokenSource = new CancellationTokenSource();
             ReadImageLoop();
             tracker.StartTracking();
             //audioSender.StartSendingAudio();
+            //audioReceiver.StartPlay();
             //ReceiveAudioLoop();
         }
 
@@ -125,7 +126,7 @@ namespace CVAssistant.Network
         {
             try
             {
-                var task = Task.Run(() => SendSelection());
+                var task = Task.Run(() => SendSelection(cancellationTokenSource.Token));
                 await task;
             }
             catch (Exception ex)
@@ -145,17 +146,9 @@ namespace CVAssistant.Network
             {
                 bytesCount += await imageStream.ReadAsync(bytesCodedArray, bytesCount, bytesCodedArrayLength - bytesCount, cancellationToken);
             }
-            if (cancellationToken.IsCancellationRequested)
-            {
-                cancellationToken.ThrowIfCancellationRequested();
-                return default;
-            }
-            else
-            {
-                var bytesCoded = Encoding.UTF8.GetString(bytesCodedArray);
-                var bytes = Convert.FromBase64String(bytesCoded);
-                return new ImageInfo(bytes, width, height);
-            }
+            var bytesCoded = Encoding.UTF8.GetString(bytesCodedArray);
+            var bytes = Convert.FromBase64String(bytesCoded);
+            return new ImageInfo(bytes, width, height);
         }
         
         private void RenderImage(ImageInfo imageInfo)
@@ -163,6 +156,7 @@ namespace CVAssistant.Network
             var texture = new Texture2D(imageInfo.Width, imageInfo.Height);
             texture.LoadImage(imageInfo.Bytes);
             ImageResizer.AdjustImageToTexture(image, new Vector2(imageInfo.Width, imageInfo.Height), ImageResizer.AdjustMode.ToMinimum);
+            UnityEngine.Object.Destroy(receivedTexture);
             receivedTexture = texture;
             var rects = tracker.CurrentRects;
             var mat = OpenCvSharp.Unity.TextureToMat(texture);
@@ -170,19 +164,20 @@ namespace CVAssistant.Network
             {
                 Cv2.Rectangle(mat, rect, Scalar.Red, 3);
             }
+            UnityEngine.Object.Destroy(image.texture);
             image.texture = OpenCvSharp.Unity.MatToTexture(mat);
         }
 
-        public async Task SendSelection()
+        public async Task SendSelection(CancellationToken cancellationToken)
         {
             var selectRects = tracker.CurrentRects;
-            await WriteInt(selectionStream, selectRects.Count);
+            await WriteInt(selectionStream, selectRects.Count, cancellationToken);
             foreach (var selectRect in selectRects)
             {
-                await WriteInt(selectionStream, selectRect.Location.X);
-                await WriteInt(selectionStream, selectRect.Location.Y);
-                await WriteInt(selectionStream, selectRect.Size.Width);
-                await WriteInt(selectionStream, selectRect.Size.Height);
+                await WriteInt(selectionStream, selectRect.Location.X, cancellationToken);
+                await WriteInt(selectionStream, selectRect.Location.Y, cancellationToken);
+                await WriteInt(selectionStream, selectRect.Size.Width, cancellationToken);
+                await WriteInt(selectionStream, selectRect.Size.Height, cancellationToken);
             }
         }
     }

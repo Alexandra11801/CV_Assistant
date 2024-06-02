@@ -1,5 +1,6 @@
 ﻿using CVAssistant.Network;
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace CVAssistant.Audio
@@ -40,7 +41,10 @@ namespace CVAssistant.Audio
                     micLoop++;
                 }
                 previousMicPosition = Microphone.GetPosition(Microphone.devices[0]);
-                socketHandler.TrySendAudio(clip, lastPosition, lastPosition + clipSize);
+                var floats = new float[clipSize];
+                clip.GetData(floats, lastPosition);
+                var task = Task.Run(() => socketHandler.TrySendAudio(floats));
+                yield return new WaitUntil(() => task.IsCompleted);
                 if(lastPosition + clipSize >= clip.samples)
                 {
                     lastPosition = 0;

@@ -67,7 +67,7 @@ namespace CVAssistant.ObjectsTracking
                 UpdateRects();
                 var task = Assistant.GetInstance().StartSendingSelection();
                 yield return new WaitUntil(() => task.IsCompleted);
-                yield return new WaitForSeconds(0.15f);
+                yield return new WaitForSeconds(0.1f);
             }
         }
 
