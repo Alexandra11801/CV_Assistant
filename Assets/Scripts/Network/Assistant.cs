@@ -60,6 +60,8 @@ namespace CVAssistant.Network
             tracker = image.GetComponent<ObjectsTracker>();
         }
 
+        //Функция передачи аудио отключена, так как выбранные инструменты не удовлетворяют требованиям производительности. Планируется дальнейшая отладка и/или переработка функции.
+
         public async Task ConnectToHost(string address)
         {
             var imageConnectionTask = RequestImage(address);

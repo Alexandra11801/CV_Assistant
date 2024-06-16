@@ -877,8 +877,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 485918273}
-  minimalSelectDiagonal: 10
-  trackersLimit: 2
+  minimalSelectDiagonal: 5
+  trackersLimit: 5
   objectSelectionPrefab: {fileID: 3158411454327247445, guid: 308b5155f2163de40856f2bd30798215, type: 3}
 --- !u!1 &634177377
 GameObject:

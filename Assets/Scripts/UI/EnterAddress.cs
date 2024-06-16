@@ -21,8 +21,8 @@ namespace CVAssistant.UI
             translationImage.gameObject.SetActive(true);
             var assistant = Assistant.GetInstance();
             assistant.SetImage(translationImage);
-            assistant.SetAudioReceiver((AudioReceiver)FindObjectOfType(typeof(AudioReceiver)));
-            assistant.SetAudioSender((AudioSender)FindObjectOfType(typeof(AudioSender)));
+            //assistant.SetAudioReceiver((AudioReceiver)FindObjectOfType(typeof(AudioReceiver)));
+            //assistant.SetAudioSender((AudioSender)FindObjectOfType(typeof(AudioSender)));
             assistant.StartMenu = startMenu;
             await assistant.ConnectToHost(inputField.text);
             tracker.enabled = true;

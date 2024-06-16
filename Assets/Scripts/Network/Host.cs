@@ -39,6 +39,8 @@ namespace CVAssistant.Network
             imageProcessor = image.GetComponent<CVCameraImageProcessor>();
         }
 
+        //Функция передачи аудио отключена, так как выбранные инструменты не удовлетворяют требованиям производительности. Планируется дальнейшая отладка и/или переработка функции.
+
         protected void Init()
         {
             var hostAddresses = Dns.GetHostAddresses(Dns.GetHostName());
@@ -128,8 +130,7 @@ namespace CVAssistant.Network
 
         private async Task SendTexture(Texture2D texture, CancellationToken cancellationToken)
         {
-            var bytes = ImageConversion.EncodeToJPG(texture, 17);
-            
+            var bytes = ImageConversion.EncodeToJPG(texture, 20);
             await WriteInt(imageStream, texture.width, cancellationToken);
             await WriteInt(imageStream, texture.height, cancellationToken);
             var bytesCoded = Convert.ToBase64String(bytes);

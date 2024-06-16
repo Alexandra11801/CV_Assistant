@@ -42,8 +42,8 @@ namespace CVAssistant.UI
             translationImage.gameObject.SetActive(true);
             var host = Host.GetInstance();
             host.SetImage(translationImage);
-            host.SetAudioReceiver((AudioReceiver)FindObjectOfType(typeof(AudioReceiver)));
-            host.SetAudioSender((AudioSender)FindObjectOfType(typeof(AudioSender)));
+            //host.SetAudioReceiver((AudioReceiver)FindObjectOfType(typeof(AudioReceiver)));
+            //host.SetAudioSender((AudioSender)FindObjectOfType(typeof(AudioSender)));
             host.StartListening();
             address.text = host.Address.ToString();
             cameraImageProcessor.enabled = true;
